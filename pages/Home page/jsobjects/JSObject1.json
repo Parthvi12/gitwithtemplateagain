@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Home page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tservice_due: () => {\n\t\t  \t\tvar todayDate =moment().format(moment.HTML5_FMT.DATE)  \n          var service_date = List.selectedItem.next_service_due   \n           if (todayDate > service_date) {    \n                return \"Yes\"    \n            }else {    \n                return \"No\"   \n            } \n\t},\n\t\tnext_service: () => {\n\t\t     var dt = new Date(DatePicker.formattedDate)\n         dt.setMonth( dt.getMonth() + parseInt(interval.text) );\t\n\t\t     return dt\n\t},\n\t\t\ttoday_date: () => {\n\t\t  \t\tvar todayDate =moment().format(moment.HTML5_FMT.DATE)  \n\t\t\t\t\treturn todayDate\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "Home page_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6345434ca46ab64641420d4f_63454419a46ab64641420d6f"
+}
